@@ -58,9 +58,9 @@ class TimezoneLoader(object):
         if zonedata is None:
             zonedata = get_zoneinfo().read('zoneinfo/' + '/'.join(name_parts))
             memcache.add(cache_key, zonedata)
-            log.info('Added timezone to memcache: %s' % cache_key)
+            # log.info('Added timezone to memcache: %s' % cache_key)
         else:
-            log.info('Loaded timezone from memcache: %s' % cache_key)
+            pass # log.info('Loaded timezone from memcache: %s' % cache_key)
 
         return StringIO(zonedata)
 
