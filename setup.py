@@ -3,7 +3,7 @@ import pytz
 
 
 setup(
-    name='gae-pytz',
+    name='pytz',
     version=pytz.__version__,
     url='https://github.com/potatolondon/gae-pytz/',
     license='MIT',
