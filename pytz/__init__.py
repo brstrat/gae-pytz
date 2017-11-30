@@ -28,10 +28,7 @@ import sys, datetime, os.path, gettext
 from UserDict import DictMixin
 from UserList import UserList
 
-try:
-    from pkg_resources import resource_stream
-except ImportError:
-    resource_stream = None
+resource_stream = None
 
 from tzinfo import AmbiguousTimeError, InvalidTimeError, NonExistentTimeError
 from tzinfo import unpickler
